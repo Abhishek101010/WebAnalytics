@@ -1,0 +1,19 @@
+<html>
+<head>
+<title> Assignment | Thank</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+</head>
+<body>
+<h1>This is a Thank You Page</h1>
+<p>This is a Thank you section.</p>
+<img id="img_selected" src="" />
+</body>
+<script>
+var c = localStorage.getItem("imageURL");
+$("#img_selected").attr("src",c);
+console.log(c);
+</script>
+</html>
+

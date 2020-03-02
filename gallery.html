@@ -1,0 +1,54 @@
+<html>
+<head>
+<title> Assignment | Gallery</title>
+</head>
+<body>
+<h1>This is a Gallery Page</h1>
+<p>This is a paragraph for Gallery</p>
+
+<div> 
+  <div class="column">
+<label>
+<img src="E:\Bhushan\Abhi\widow.jpg" style="border-radius: 8px;width:30%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);height: 304.797">
+<input type="radio" id="widow" name="test" value="small">
+</label><br><br>
+
+<label>
+  <img src="E:\Bhushan\Abhi\deadpool.jpeg" style="border-radius: 8px;width:30%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);height: 304.797">
+<input type="radio" id="deadpool" name="test" value="small">
+</label><br><br>
+
+<label>
+  <img src="E:\Bhushan\Abhi\batman.jpg" style="border-radius: 8px;width:30%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);height: 304.797">
+<input type="radio" id="batman" name="test" value="small">
+</label><br><br>
+
+<label>
+  <img src="E:\Bhushan\Abhi\captain.jpg" style="border-radius: 8px;width:30%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);height: 304.797">
+<input type="radio" id="captain" name="test" value="small">
+</label><br><br>
+
+<label>
+  <img src="E:\Bhushan\Abhi\hydra.jpg" style="border-radius: 8px;width:30%;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);height: 304.797">
+<input type="radio" id="hydra" name="test" value="small">
+</label><br><br>
+	<input type="submit" value="Submit" onclick="myFunction()" style="height: 50px;width: 100px;">
+
+  </div>
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script>
+
+
+function myFunction() {
+	var a =$('input[name="test"]:checked').prev();
+	var b = a.attr("src");
+	console.log(b);
+	localStorage.setItem("imageURL", b);
+	document.location.href = 'thank.html';
+}
+ 
+</script>
+</html>
